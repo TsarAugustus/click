@@ -1,0 +1,26 @@
+html
+  head
+  script(src="./scripts/main.min.js")
+  link(rel="stylesheet", href="./styles/main.min.css")
+  body
+    h3 Resources
+    div.resources
+      div
+        button(onclick="getWood()") Wood
+        p#woodCount 0
+      div
+        button(onclick="getCoal()") Coal
+        p#coalCount 0
+      div
+        button(onclick="getStone()") Stone
+        p#stoneCount 0
+    div.clickUpgrades
+      div
+        button(onclick="woodClickUpgrade()") Wood Upgrade
+        p#woodUpgrades 0
+      div
+        button(onclick="coalClickUpgrade()") Coal Upgrade
+        p#coalUpgrades 0
+      div
+        button(onclick="stoneClickUpgrade") Stone Upgrade
+        p#stoneUpgrades 0
