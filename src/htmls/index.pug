@@ -1,6 +1,6 @@
 html
   head
-  script(src="./scripts/main.min.js")
+  script(src="./scripts/main.js")
   link(rel="stylesheet", href="./styles/main.min.css")
   body
     h3 Resources
@@ -8,19 +8,39 @@ html
       div
         button(onclick="getWood()") Wood
         p#woodCount 0
+        p#woodClickPower 1
       div
         button(onclick="getCoal()") Coal
         p#coalCount 0
+        p#coalClickPower 1
       div
         button(onclick="getStone()") Stone
         p#stoneCount 0
+        p#stoneClickPower 1
     div.clickUpgrades
       div
         button(onclick="woodClickUpgrade()") Wood Upgrade
         p#woodUpgrades 0
+        p#woodUpgradeCost 100
       div
         button(onclick="coalClickUpgrade()") Coal Upgrade
         p#coalUpgrades 0
+        p#coalUpgradeCost 100
       div
-        button(onclick="stoneClickUpgrade") Stone Upgrade
+        button(onclick="stoneClickUpgrade()") Stone Upgrade
         p#stoneUpgrades 0
+        p#stoneUpgradeCost 100
+    div.resourceWorkers
+      div
+        button(onclick="woodWorker()") Wood Worker
+        p#woodWorkers 0
+        p#woodWorkerCost 50
+      div
+        button(onclick="coalWorker()") Coal Worker
+        p#coalWorkers 0
+        p#coalWorkerCost 50
+      div
+        button(onclick="stoneWorker()") Stone Worker
+        p#stoneWorkers 0
+        p#stoneWorkerCost 50      
+        
