@@ -1,10 +1,12 @@
 * {
   background-color: #eee; }
 
-h3 {
-  text-align: center; }
+.wrapper {
+  width: 100%;
+  max-width: 100%; }
 
 .resources {
+  width: 100%;
   border: 1px solid black;
   text-align: center;
   display: flex;
@@ -12,9 +14,12 @@ h3 {
   .resources div {
     margin-left: 1em;
     margin-right: 1em; }
+  .resources h3 {
+    text-align: center; }
 
 .clickUpgrades {
-  width: 45%;
+  height: 75%;
+  width: 20%;
   border: 1px solid black;
   text-align: center;
   display: flex;
@@ -22,7 +27,8 @@ h3 {
   float: left; }
 
 .resourceWorkers {
-  width: 45%;
+  height: 75%;
+  width: 20%;
   border: 1px solid black;
   text-align: center;
   display: flex;

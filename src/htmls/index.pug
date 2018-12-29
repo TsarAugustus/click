@@ -1,46 +1,70 @@
 html
   head
-  script(src="./scripts/main.js")
+  script(src="./scripts/main.min.js")
   link(rel="stylesheet", href="./styles/main.min.css")
   body
-    h3 Resources
-    div.resources
-      div
-        button(onclick="getWood()") Wood
-        p#woodCount 0
-        p#woodClickPower 1
-      div
-        button(onclick="getCoal()") Coal
-        p#coalCount 0
-        p#coalClickPower 1
-      div
-        button(onclick="getStone()") Stone
-        p#stoneCount 0
-        p#stoneClickPower 1
-    div.clickUpgrades
-      div
-        button(onclick="woodClickUpgrade()") Wood Upgrade
-        p#woodUpgrades 0
-        p#woodUpgradeCost 100
-      div
-        button(onclick="coalClickUpgrade()") Coal Upgrade
-        p#coalUpgrades 0
-        p#coalUpgradeCost 100
-      div
-        button(onclick="stoneClickUpgrade()") Stone Upgrade
-        p#stoneUpgrades 0
-        p#stoneUpgradeCost 100
-    div.resourceWorkers
-      div
-        button(onclick="woodWorker()") Wood Worker
-        p#woodWorkers 0
-        p#woodWorkerCost 50
-      div
-        button(onclick="coalWorker()") Coal Worker
-        p#coalWorkers 0
-        p#coalWorkerCost 50
-      div
-        button(onclick="stoneWorker()") Stone Worker
-        p#stoneWorkers 0
-        p#stoneWorkerCost 50      
-        
+    .wrapper
+      div.clickUpgrades
+        div
+          button(onclick="woodClickUpgrade()") Wood Upgrade
+          p#woodUpgrades 0
+          p#woodUpgradeCost 100
+        div
+          button(onclick="coalClickUpgrade()") Coal Upgrade
+          p#coalUpgrades 0
+          p#coalUpgradeCost 100
+        div
+          button(onclick="stoneClickUpgrade()") Stone Upgrade
+          p#stoneUpgrades 0
+          p#stoneUpgradeCost 100
+        div
+          button(onclick="foodClickUpgrade()") Food Upgrade
+          p#foodUpgrades 0
+          p#foodUpgradeCost 100
+        div
+          button(onclick="waterClickUpgrade()") Water Upgrade
+          p#waterUpgrades 0
+          p#waterUpgradeCost 100
+      div.resourceWorkers
+        div
+          button(onclick="woodWorker()") Wood Worker
+          p#woodWorkers 0
+          p#woodWorkerCost 50
+        div
+          button(onclick="coalWorker()") Coal Worker
+          p#coalWorkers 0
+          p#coalWorkerCost 50
+        div
+          button(onclick="stoneWorker()") Stone Worker
+          p#stoneWorkers 0
+          p#stoneWorkerCost 50
+        div
+          button(onclick="foodWorker()") Food Worker
+          p#foodWorkers 0
+          p#foodWorkerCost 50
+        div
+          button(onclick="waterWorker()") Water Worker
+          p#waterWorkers 0
+          p#waterWorkerCost 50
+      div.resources
+        div
+          button(onclick="getWood()") Wood
+          p#woodCount 0
+          p#woodClickPower 1
+        div
+          button(onclick="getCoal()") Coal
+          p#coalCount 0
+          p#coalClickPower 1
+        div
+          button(onclick="getStone()") Stone
+          p#stoneCount 0
+          p#stoneClickPower 1
+        div
+          button(onclick="getFood()") Food
+          p#foodCount 0
+          p#foodClickPower 1
+        div
+          button(onclick="getWater()") Water
+          p#waterCount 0
+          p#waterClickPower 1
+      
