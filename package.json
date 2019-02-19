@@ -4,7 +4,7 @@
   "description": "cliking",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "nodemon ./bin/www"
   },
   "repository": {
     "type": "git",
@@ -17,12 +17,18 @@
   },
   "homepage": "https://github.com/TsarAugustus/click#readme",
   "dependencies": {
+    "body-parser": "^1.18.3",
     "browser-sync": "^2.26.3",
+    "cookie-parser": "^1.4.4",
+    "express": "^4.16.4",
+    "express-session": "^1.15.6",
     "gulp": "^4.0.0",
     "gulp-concat": "^2.6.1",
     "gulp-pug": "^4.0.1",
     "gulp-rename": "^1.4.0",
     "gulp-sass": "^4.0.2",
-    "gulp-terser": "^1.1.6"
+    "gulp-terser": "^1.1.6",
+    "path": "^0.12.7",
+    "pug": "^2.0.3"
   }
 }
